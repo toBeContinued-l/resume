@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node / Next.js artifacts
+node_modules/
+.next/
+build/
+dist/
+coverage/
+out/
+*.tsbuildinfo
+*.log
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Local tooling and workspace files
+.idea/
+.vscode/
+.sixth/
+
+# OS files
+.DS_Store

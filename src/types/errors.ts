@@ -1,0 +1,18 @@
+export const errorCodes = [
+  "UNAUTHENTICATED",
+  "FORBIDDEN",
+  "VALIDATION_ERROR",
+  "FILE_TOO_LARGE",
+  "UNSUPPORTED_FILE_TYPE",
+  "RESUME_LIMIT_REACHED",
+  "TASK_NOT_FOUND",
+  "RESUME_NOT_FOUND",
+  "LINK_NOT_FOUND",
+  "LINK_INACTIVE",
+  "ACCESS_PASSWORD_REQUIRED",
+  "ACCESS_PASSWORD_INVALID",
+  "RATE_LIMITED",
+  "GENERATION_FAILED"
+] as const;
+
+export type ErrorCode = (typeof errorCodes)[number];

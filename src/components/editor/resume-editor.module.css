@@ -1,0 +1,85 @@
+.editorShell {
+  display: grid;
+  gap: 20px;
+}
+
+.editorGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dfe4e8;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.stack {
+  display: grid;
+  gap: 14px;
+}
+
+.toolbar,
+.fieldHeader,
+.sectionHeader,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fieldHeader,
+.sectionHeader {
+  justify-content: space-between;
+}
+
+.sectionCard {
+  border-top: 1px solid #e5e9ec;
+  display: grid;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.inlineFields {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.richTextField {
+  display: grid;
+  gap: 8px;
+}
+
+.richText {
+  min-height: 96px;
+  border: 1px solid #cbd5dc;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.confirmationList {
+  display: grid;
+  gap: 10px;
+}
+
+.confirmationItem {
+  border: 1px solid #e5e9ec;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.statusLine {
+  color: #5c6670;
+  min-height: 24px;
+}
+
+@media (max-width: 860px) {
+  .editorGrid,
+  .inlineFields {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.shell {
+  min-height: calc(100vh - 65px);
+  padding: 48px 24px 64px;
+}
+
+.panel {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.panel h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.panel p {
+  margin: 0;
+}
+
+.panel a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
